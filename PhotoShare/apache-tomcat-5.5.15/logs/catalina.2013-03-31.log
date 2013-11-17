@@ -1,0 +1,150 @@
+Mar 31, 2013 12:06:46 AM org.apache.catalina.startup.Catalina stopServer
+SEVERE: Catalina.stop: 
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:364)
+	at java.net.Socket.connect(Socket.java:507)
+	at java.net.Socket.connect(Socket.java:457)
+	at java.net.Socket.<init>(Socket.java:365)
+	at java.net.Socket.<init>(Socket.java:178)
+	at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:394)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:324)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:415)
+Mar 31, 2013 12:06:47 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /research/CS-local/jdk1.5.0_01/jre/lib/i386/server:/research/CS-local/jdk1.5.0_01/jre/lib/i386:/research/CS-local/jdk1.5.0_01/jre/../lib/i386
+Mar 31, 2013 12:06:47 AM org.apache.coyote.http11.Http11BaseProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-9548
+Mar 31, 2013 12:06:47 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 344 ms
+Mar 31, 2013 12:06:47 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 31, 2013 12:06:47 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.15
+Mar 31, 2013 12:06:47 AM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Mar 31, 2013 12:06:48 AM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-9548
+Mar 31, 2013 12:06:48 AM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Mar 31, 2013 12:06:48 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1275 ms
+Mar 31, 2013 12:06:49 AM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-9548
+Mar 31, 2013 12:06:50 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /research/CS-local/jdk1.5.0_01/jre/lib/i386/server:/research/CS-local/jdk1.5.0_01/jre/lib/i386:/research/CS-local/jdk1.5.0_01/jre/../lib/i386
+Mar 31, 2013 12:06:50 AM org.apache.coyote.http11.Http11BaseProtocol init
+SEVERE: Error initializing endpoint
+java.net.BindException: Address already in use:9548
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.initEndpoint(PoolTcpEndpoint.java:297)
+	at org.apache.coyote.http11.Http11BaseProtocol.init(Http11BaseProtocol.java:141)
+	at org.apache.catalina.connector.Connector.initialize(Connector.java:1016)
+	at org.apache.catalina.core.StandardService.initialize(StandardService.java:580)
+	at org.apache.catalina.core.StandardServer.initialize(StandardServer.java:782)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:503)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:523)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:247)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:412)
+Mar 31, 2013 12:06:50 AM org.apache.catalina.startup.Catalina load
+SEVERE: Catalina.start
+LifecycleException:  Protocol handler initialization failed: java.net.BindException: Address already in use:9548
+	at org.apache.catalina.connector.Connector.initialize(Connector.java:1018)
+	at org.apache.catalina.core.StandardService.initialize(StandardService.java:580)
+	at org.apache.catalina.core.StandardServer.initialize(StandardServer.java:782)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:503)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:523)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:247)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:412)
+Mar 31, 2013 12:06:50 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 331 ms
+Mar 31, 2013 12:06:50 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 31, 2013 12:06:50 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.15
+Mar 31, 2013 12:06:50 AM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Mar 31, 2013 12:06:50 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 31, 2013 12:06:50 AM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-9548
+Mar 31, 2013 12:06:50 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime
+Mar 31, 2013 12:06:51 AM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-9548
+Mar 31, 2013 12:06:51 AM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Mar 31, 2013 12:06:51 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 678 ms
+Mar 31, 2013 12:20:33 AM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-9548
+Mar 31, 2013 12:20:34 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 31, 2013 12:20:34 AM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 31, 2013 12:20:35 AM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 31, 2013 12:20:36 AM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 31, 2013 12:20:36 AM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-9548
+Mar 31, 2013 12:20:36 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime
+Mar 31, 2013 6:31:16 PM org.apache.catalina.startup.Catalina stopServer
+SEVERE: Catalina.stop: 
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(PlainSocketImpl.java:333)
+	at java.net.PlainSocketImpl.connectToAddress(PlainSocketImpl.java:195)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:364)
+	at java.net.Socket.connect(Socket.java:507)
+	at java.net.Socket.connect(Socket.java:457)
+	at java.net.Socket.<init>(Socket.java:365)
+	at java.net.Socket.<init>(Socket.java:178)
+	at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:394)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:324)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:415)
+Mar 31, 2013 6:31:17 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /research/CS-local/jdk1.5.0_01/jre/lib/i386/server:/research/CS-local/jdk1.5.0_01/jre/lib/i386:/research/CS-local/jdk1.5.0_01/jre/../lib/i386
+Mar 31, 2013 6:31:17 PM org.apache.coyote.http11.Http11BaseProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-9548
+Mar 31, 2013 6:31:17 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 362 ms
+Mar 31, 2013 6:31:17 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 31, 2013 6:31:17 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.15
+Mar 31, 2013 6:31:17 PM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Mar 31, 2013 6:31:19 PM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-9548
+Mar 31, 2013 6:31:19 PM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Mar 31, 2013 6:31:19 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 1925 ms
+Mar 31, 2013 6:33:13 PM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-9548
+Mar 31, 2013 6:33:14 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 31, 2013 6:33:14 PM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-9548
+Mar 31, 2013 6:33:14 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime

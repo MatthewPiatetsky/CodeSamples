@@ -1,0 +1,149 @@
+<%@ page import="photoshare.NewCommentDao" %>
+<%@ page import="photoshare.NewUserDao" %>
+<%@ page import="photoshare.Picture" %>
+<%@ page import="photoshare.PictureDao" %>
+<%@ page import="java.util.List" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+
+<html>
+<head>
+<link rel="stylesheet" href="css/lightbox.css" type="text/css"
+media="screen" />
+
+
+<link rel="stylesheet" href="css/style.css" />
+     <script src="js/jquery-1.7.2.min.js"
+     type="text/javascript"></script>
+
+     <script src="js/lightbox.js" type="text/javascript"></script>
+<article style="color:#fff;" id="email" class="panel">
+
+
+
+<title>Picture </title></head>
+
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src ="//connect.facebook.net/en_US/all.js#xfbml=1&appId=135337009851354";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<%
+int picture_id = Integer.valueOf(request.getParameter("picture_id"));
+%>
+
+
+<%PictureDao pictureDao = new PictureDao(); 
+Picture picture1 = pictureDao.load(picture_id);
+String requestemail = request.getUserPrincipal().getName();
+String pcaption=picture1.getCaption();
+NewCommentDao newCommentDao = new NewCommentDao();
+String owner = newCommentDao.getOwner(picture_id);
+ %>
+<h1 style="color:green; font-weight: bold; text-decoration: underline;"><%=
+pcaption %></h1>
+<a style="max-width:85%; height: auto;" href="/photoshare/img?picture_id=<%= picture_id %>" rel="lightbox">
+            <img rel="lightbox" style="max-width:85%; height: auto;"
+	    src="/photoshare/img?picture_id=<%= picture_id %>"/> </a>
+	    <br>
+
+<p> Hello <b><code><%= requestemail  %></code></b> <br>
+This picture has the id <%= picture_id %> <br>
+You can delete this picture, add a tag or comment or share the picture on
+social media. <br> </p>
+<a href="/photoshare/index.jsp">Back to more photos!</a>
+<br>
+<br>
+
+<h2>Albums</h2>
+
+<form action="addtoalbum.jsp" method="post">
+    <input type="text" placeholder="Album Name" name="album_name" style="color:#000;">
+    <input type="hidden" name="picture_id" value=<%= picture_id %> >
+    <input type="submit" value="Add To Album!" style="color:#000;" ><br>
+</form>
+
+<%if((request.getUserPrincipal().getName()).equals(owner)){%>
+<h2> Delete This Picture </h2>
+<form action="delete.jsp" method="post">
+<input type="hidden"
+    name="pid" value=<%= picture_id %> >
+    <input type="submit" style="color:#000;" value="Delete"/>
+</form>
+<%}%>
+
+
+<h2>Tags</h2>
+<form action="tags.jsp" method="post">
+    <input type="text" name="tag_text" style="color:#000;">
+    <input type="hidden" name="email"
+    value="request.getUserPrincipal().getName()"\>
+<input type="hidden" name="picture_id" value="<%= picture_id %>">
+
+    <input type="submit" value="Add Tag" style="color:#000;"><br/>
+</form>
+<% String tagmagic = "youshallnotpass"; %>
+<form action="tags.jsp" method="post">
+    <input type="hidden" name="tag_text" value="<%=tagmagic%>">
+    <input type="hidden" name="email"
+    value="request.getUserPrincipal().getName()"\>
+    <input type="hidden" name="picture_id" value="<%= picture_id %>">
+    <input type="submit" value="View Tags" style="color:#000;"><br/>
+</form>
+
+
+
+<h2>Comments</h2>
+<%if(!(request.getUserPrincipal().getName()).equals(owner)){%>
+
+<form action="comments.jsp" method="post">
+    <input type="text" name="comment_text" style="color:#000;">
+    <input type="hidden" name="email" value="request.getUserPrincipal().getName()">
+    <input type="hidden" name="picture_id" value="<%= picture_id %>">
+    <input type="submit" value="Add Comment" style="color:#000;"><br/>
+</form>
+<%}%>
+<% String commentmagic = "YOU SHALL NOT PASS"; %>
+<form action="comments.jsp" method="post">
+    <input type="hidden" name="comment_text" value="<%=commentmagic%>">
+    <input type="hidden" name="email" value="request.getUserPrincipal().getName()">
+    <input type="hidden" name="picture_id" value="<%= picture_id %>">
+    <input type="submit" value="View Comments" style="color:#000;"><br/>
+</form>
+<%NewCommentDao newCommentDao3 = new NewCommentDao();
+boolean hasLiked = newCommentDao3.hasLiked(request.getUserPrincipal().getName());%>
+<h2>Likes</h2>
+<%if(!hasLiked){%>
+<table><tr><td>
+<form action="likes.jsp" method="post">
+    <input type="hidden" name="email" value="<%=requestemail%>" style="color:#000;">
+    <input type="hidden" name="picture_id" value=<%= picture_id %> >
+    <input type="submit" value="Like!" style="color:#000;" >
+</form>
+</td>
+<%}%>
+<td>
+<form action="likes.jsp" method="post">
+    <input type="hidden" name="email" value="YOU SHALL NOT PASS" style="color:#000;">
+    <input type="hidden" name="picture_id" value=<%= picture_id %> >
+    <input type="submit" value="View Likes" style="color:#000;" ><br>
+</form>
+</td></td></table>
+<h2>Share this photo!</h2>
+<br>
+
+<a href="https://twitter.com/share" class="twitter-share-button"
+data-text="Check out this photo!">Tweet</a>
+<script>!function(d,s,id){var
+js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script type="text/javascript" src="http://www.reddit.com/static/button/button1.js"></script>
+<fb:like layout="standard" width="450" action="like" colorscheme="light" />
+</body>
+</html>
+

@@ -1,0 +1,45 @@
+<%@ page import="photoshare.NewTagDao" %>
+<%@ page import="photoshare.Picture" %>
+<%@ page import="photoshare.PictureDao" %>
+<%@ page import="java.util.List" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css" />
+
+<title>Pictures by Tag </title></head>
+
+<body>
+
+<%
+String tag_text = request.getParameter("tag_text");
+%>
+
+<a href="/photoshare/index.jsp">Take me back to the main page!</a>
+<a href="/photoshare/searchbytags.jsp">I want to search all photos by tags!</a>
+
+<br>
+<h2> The tag <span class="rainbow" ><%=tag_text%></span> exists for the following photos! </h2>
+<table>
+    <tr>
+        <%
+            NewTagDao newTagDao = new NewTagDao();
+            List<Integer> pictureIds = newTagDao.allPicturesIds(tag_text);
+            for (Integer pictureId : pictureIds) {
+        %>
+        <td>
+        <a href="/photoshare/picture.jsp?picture_id=<%= pictureId%>">
+          <img src="/photoshare/img?t=1&picture_id=<%= pictureId %>"/>
+        </a>
+        </td>
+        <%
+            }
+        %>
+    </tr>
+</table>
+
+</body>
+</html>
+

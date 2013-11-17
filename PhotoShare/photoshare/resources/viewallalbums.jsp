@@ -1,0 +1,43 @@
+<%@ page import="photoshare.NewUserDao" %>
+<%@ page import="photoshare.PictureDao" %>
+<%@ page import="photoshare.Picture" %>
+<%@ page import="java.util.List" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<jsp:useBean id="NewUserBean"
+             class="photoshare.NewUserBean">
+    <jsp:setProperty name="NewUserBean" property="*"/>
+</jsp:useBean>
+
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css" />
+
+<title>Albums </title></head>
+
+<body>
+
+<a href="/photoshare/index.jsp">Take me back to the main page!</a>
+<br>
+
+<h1 style="text-decoration:underline;">All Albums</h1>
+<table>
+    <tr>
+        <%
+	    NewUserDao newuserDao1 = new NewUserDao();
+            List<String> albums = newuserDao1.allAlbums();
+            for (String album : albums) {
+	%>
+	
+        <a style="color:##7FFF00;" href="/photoshare/viewalbum.jsp?album_name=<%=album%>"> <%=album%> </a>.     
+        <%
+           }
+        %>
+	
+
+    </tr>
+</table>
+
+
+</body>
+</html>
+

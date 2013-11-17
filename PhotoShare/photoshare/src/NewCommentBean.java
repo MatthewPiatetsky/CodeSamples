@@ -1,0 +1,40 @@
+package photoshare;
+
+import javax.servlet.http.HttpServletRequest;
+import java.util.List;
+import java.sql.Date;
+
+/**
+ * A bean that handles new comment data
+ */
+
+public class NewCommentBean {
+    private String comment_id = "";
+    private String comment_text = "";
+    private String user_id = "";
+    private Date comment_date;
+
+    public String getCommentText() {
+        return comment_text;
+    }
+
+    public String getUserId() {
+        return user_id;
+    }
+
+    public Date getCommentDate() {
+        return comment_date;
+    }
+  
+    public void setCommentText(String comment_text) {
+        this.comment_text=comment_text;
+    }
+
+    public void setUserId(String user_id) {
+        this.user_id=user_id;
+    }
+
+    public void setCommentDate(Date comment_date) {
+        this.comment_date=comment_date;
+    }
+}

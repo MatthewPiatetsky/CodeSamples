@@ -1,0 +1,429 @@
+package photoshare;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.Statement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+import java.lang.Integer;
+import java.util.Date;
+
+/**
+ * A data access object (DAO) to handle the Tags table
+ */
+
+public class NewTagDao {
+
+    private static final String NEW_TAG_STMT = "INSERT INTO " + "tags (tag_text,user_id,tag_date,picture_id) VALUES (?,?,?,?)";
+
+    private static final String ALL_TAG_TEXT_STMT = "SELECT DISTINCT \"tag_text\",\"user_id\" FROM tags WHERE \"picture_id\"=?";
+
+    private static final String ALL_TAGS = "SELECT tag_text FROM tags GROUP BY tag_text";
+
+    private static final String OTHERS_PHOTOS ="CREATE VIEW others_photos AS SELECT FROM tags WHERE user_id!=?";
+private static final String MOST_POPULAR_TAGS = "SELECT tag_text FROM tags GROUP BY tag_text ORDER_BY COUNT(*) DESC";
+
+ private static final String MY_TAGS = "SELECT tag_text FROM tags WHERE user_id=? GROUP BY tag_text";
+
+ private static final String MY_TAGS_FIVE = "SELECT tag_text FROM tags WHERE user_id=? GROUP BY tag_text ORDER BY COUNT(*) DESC LIMIT 5";
+
+private static final String GET_USER_ID_STMT = "SELECT \"user_id\" FROM users WHERE \"email\"=?";
+
+private static final String GET_USER_NAME =  "SELECT \"first_name\",\"last_name\" FROM users WHERE user_id= ?";
+
+  private static final String ALL_PICTURE_IDS_STMT = "SELECT \"picture_id\" FROM tags WHERE \"tag_text\"=?  ORDER BY \"picture_id\" DESC";
+
+
+public String getUserName(int id) throws SQLException {
+
+    PreparedStatement stmt = null;
+    Connection conn = null;
+    ResultSet username = null;
+    conn = DbConnection.getConnection();
+    stmt = conn.prepareStatement(GET_USER_NAME);
+    stmt.setInt(1,id);
+    username  = stmt.executeQuery();
+    String name = "";
+    while(username.next()){
+	name += username.getString(1) + " ";
+    }
+    
+    username.close();
+    username=null;
+
+    stmt.close();
+    stmt = null;
+
+    conn.close();
+    conn = null;
+
+    return name;
+    
+
+}
+
+
+public int getUserId(String email) throws SQLException {
+
+    PreparedStatement stmt = null;
+    Connection conn = null;
+    ResultSet useridrs = null;
+    conn = DbConnection.getConnection();
+    stmt = conn.prepareStatement(GET_USER_ID_STMT);
+    stmt.setString(1,email);
+    useridrs = stmt.executeQuery();
+    int id = 16;
+    while(useridrs.next()){
+	id = useridrs.getInt(1);
+    }
+    useridrs.close();
+    useridrs=null;    
+
+    stmt.close();
+    stmt = null;
+
+    conn.close();
+    conn = null;
+    return id;
+
+}
+ 
+
+    public boolean create(String tag_text,int user_id, int picture_id) throws SQLException{
+	if(tag_text.equals("youshallnotpass")){
+	    return true;
+	}
+    PreparedStatement stmt = null;
+    Connection conn = null;
+    
+    conn = DbConnection.getConnection();
+    stmt = conn.prepareStatement(NEW_TAG_STMT);
+    stmt.setString(1,tag_text);
+    stmt.setInt(2,user_id);
+    java.util.Date today = new java.util.Date();
+    java.sql.Date sqlToday = new java.sql.Date(today.getTime());
+    stmt.setDate(3,sqlToday);
+    stmt.setInt(4,picture_id);
+    stmt.executeUpdate();
+    
+    
+    
+    stmt.close();
+    stmt = null;
+
+    conn.close();
+    conn = null;
+
+    return true;
+
+    }
+
+public List<String> allTagText(int picture_id) {
+                PreparedStatement stmt = null;
+                Connection conn = null;
+                ResultSet rs = null;
+
+                List<String> tagText = new ArrayList<String>(); 
+                try {
+                        conn = DbConnection.getConnection();
+                        stmt = conn.prepareStatement(ALL_TAG_TEXT_STMT);
+                        stmt.setInt(1,picture_id);
+			rs = stmt.executeQuery();
+                        while (rs.next()) {
+                            String text = rs.getString(1);
+			    tagText.add(text);
+                        }
+
+                        rs.close();
+                        rs = null;
+
+                        stmt.close();
+                        stmt = null;
+
+                        conn.close();
+                        conn = null;
+                } catch (SQLException e) {
+                        e.printStackTrace();
+                        throw new RuntimeException(e);
+                } finally {
+                        if (rs != null) {
+                                try { rs.close(); } catch (SQLException e) { ; }
+                                rs = null;
+                        }
+                        if (stmt != null) {
+                                try { stmt.close(); } catch (SQLException e) {;}
+				stmt = null;
+                        }
+                        if (conn != null) {
+			    try { conn.close(); } catch (SQLException e) {;}
+                                conn = null;
+                        }
+                }
+
+                return tagText;
+        }
+
+
+    public List<String> recommendTags(String[] tagarray) throws SQLException {
+        PreparedStatement stmt = null;
+        Connection conn = null;
+        ResultSet rs = null;
+	String queryfirst= "SELECT tag_text FROM tags WHERE picture_id IN (";
+	String querymiddle = " SELECT picture_id FROM tags WHERE tag_text=";
+	for (String tag : tagarray){
+	    queryfirst += querymiddle + "'"+tag+"'";
+	    queryfirst += " INTERSECT ";
+	}
+	String finalquery = queryfirst.substring(0,queryfirst.length()-10) + " ) GROUP BY tag_text ORDER BY Count(*) DESC;";
+	List<String> recommendedTags = new ArrayList<String>();
+        conn = DbConnection.getConnection();
+        stmt = conn.prepareStatement(finalquery);
+        rs = stmt.executeQuery();
+        while (rs.next()) {
+            String recommended = rs.getString(1);
+            recommendedTags.add(recommended);
+        }
+
+        rs.close();
+        rs = null;
+
+        stmt.close();
+        stmt = null;
+
+        conn.close();
+        conn = null;
+
+        return recommendedTags;
+
+    }
+
+
+    public List<Integer> searchTags(String[] tagarray) throws SQLException {
+	PreparedStatement stmt = null;
+	Connection conn = null;
+	ResultSet rs = null;
+	String query = "";
+	for (String tag : tagarray){
+        query += "SELECT picture_id FROM tags WHERE tag_text=" + "'"+tag+"'";
+	query+= " INTERSECT ";
+	    }
+	String finalquery = query.substring(0,query.length()-11)+ " ;";
+	System.out.println("FINALQUERY" + finalquery);
+	List<Integer> pictureIds = new ArrayList<Integer>();
+	conn = DbConnection.getConnection();
+	stmt = conn.prepareStatement(finalquery);
+	rs = stmt.executeQuery();
+	while (rs.next()) {
+	    int ids = rs.getInt(1);
+	    pictureIds.add(ids);
+	}
+
+	rs.close();
+	rs = null;
+
+	stmt.close();
+	stmt = null;
+
+	conn.close();
+	conn = null;
+
+	return pictureIds;
+
+    }
+
+
+    public List<Integer> searchTags2(String[] tagarray,int user_id) throws SQLException {
+	PreparedStatement stmt = null;
+	Connection conn = null;
+	ResultSet rs = null;
+	stmt = conn.prepareStatement(OTHERS_PHOTOS);
+        stmt.setInt(1,user_id);
+	String query = "";
+	    for (String tag : tagarray){
+        query += "SELECT picture_id FROM others_photos WHERE user_id=  tag_text=" + "'"+tag+"'";
+	query+= " INTERSECT ";
+	    }
+	    String finalquery = query.substring(0,query.length()-11)+ " ;";
+	List<Integer> pictureIds = new ArrayList<Integer>();
+	conn = DbConnection.getConnection();
+	stmt = conn.prepareStatement(finalquery);
+	rs = stmt.executeQuery();
+	while (rs.next()) {
+	    int ids = rs.getInt(1);
+	    pictureIds.add(ids);
+	}
+
+	rs.close();
+	rs = null;
+
+	stmt.close();
+	stmt = null;
+
+	conn.close();
+	conn = null;
+
+	return pictureIds;
+
+    }
+
+
+    public List<String> myTags(int id) throws SQLException {
+	PreparedStatement stmt = null;
+	Connection conn = null;
+	ResultSet rs = null;
+
+	List<String> tagText = new ArrayList<String>();
+	conn = DbConnection.getConnection();
+	stmt = conn.prepareStatement(MY_TAGS);
+	stmt.setInt(1,id);
+	rs = stmt.executeQuery();
+	while (rs.next()) {
+	    String text = rs.getString(1);
+	    tagText.add(text);
+	}
+
+	rs.close();
+	rs = null;
+
+	stmt.close();
+	stmt = null;
+
+	conn.close();
+	conn = null;
+
+	return tagText;
+
+    }
+
+     public List<String> myTagsFive(int id) throws SQLException {
+	PreparedStatement stmt = null;
+	Connection conn = null;
+	ResultSet rs = null;
+
+	List<String> tagText = new ArrayList<String>();
+	conn = DbConnection.getConnection();
+	stmt = conn.prepareStatement(MY_TAGS_FIVE);
+	stmt.setInt(1,id);
+	rs = stmt.executeQuery();
+	while (rs.next()) {
+	    String text = rs.getString(1);
+	    tagText.add(text);
+	}
+
+	rs.close();
+	rs = null;
+
+	stmt.close();
+	stmt = null;
+
+	conn.close();
+	conn = null;
+
+	return tagText;
+
+    }
+
+    public List<String> mostPopularTags() throws SQLException {
+	PreparedStatement stmt = null;
+	Connection conn = null;
+	ResultSet rs = null;
+
+	List<String> tagText = new ArrayList<String>();
+	conn = DbConnection.getConnection();
+	stmt = conn.prepareStatement(MOST_POPULAR_TAGS);
+	rs = stmt.executeQuery();
+	while (rs.next()) {
+	    String text = rs.getString(1);
+	    tagText.add(text);
+	}
+
+	rs.close();
+	rs = null;
+
+	stmt.close();
+	stmt = null;
+
+	conn.close();
+	conn = null;
+
+	return tagText;
+
+    }
+
+
+public List<String> allTags() throws SQLException {
+                PreparedStatement stmt = null;
+                Connection conn = null;
+                ResultSet rs = null;
+
+                List<String> tagText = new ArrayList<String>(); 
+                        conn = DbConnection.getConnection();
+                        stmt = conn.prepareStatement(ALL_TAGS);
+			rs = stmt.executeQuery();
+                        while (rs.next()) {
+                            String text = rs.getString(1);
+			    tagText.add(text);
+                        }
+
+                        rs.close();
+                        rs = null;
+
+                        stmt.close();
+                        stmt = null;
+
+                        conn.close();
+                        conn = null;
+
+			return tagText;
+		
+}
+
+
+public List<Integer> allPicturesIds(String tag_text) {
+		PreparedStatement stmt = null;
+		Connection conn = null;
+		ResultSet rs = null;
+		
+		List<Integer> picturesIds = new ArrayList<Integer>();
+		try {
+			conn = DbConnection.getConnection();
+			stmt = conn.prepareStatement(ALL_PICTURE_IDS_STMT);
+			stmt.setString(1,tag_text);
+			rs = stmt.executeQuery();
+			while (rs.next()) {
+				picturesIds.add(rs.getInt(1));
+			}
+
+			rs.close();
+			rs = null;
+
+			stmt.close();
+			stmt = null;
+
+			conn.close();
+			conn = null;
+		} catch (SQLException e) {
+			e.printStackTrace();
+			throw new RuntimeException(e);
+		} finally {
+			if (rs != null) {
+				try { rs.close(); } catch (SQLException e) { ; }
+				rs = null;
+			}
+			if (stmt != null) {
+				try { stmt.close(); } catch (SQLException e) { ; }
+				stmt = null;
+			}
+			if (conn != null) {
+				try { conn.close(); } catch (SQLException e) { ; }
+				conn = null;
+			}
+		}
+
+		return picturesIds;
+	}
+
+}
+

@@ -1,0 +1,500 @@
+Mar 25, 2013 12:20:08 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 12:20:08 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 1:45:43 AM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 1:45:44 AM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 25, 2013 1:45:44 AM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 1:45:44 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime
+Mar 25, 2013 1:45:52 AM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /research/CS-local/jdk1.5.0_01/jre/lib/i386/server:/research/CS-local/jdk1.5.0_01/jre/lib/i386:/research/CS-local/jdk1.5.0_01/jre/../lib/i386
+Mar 25, 2013 1:45:52 AM org.apache.coyote.http11.Http11BaseProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 1:45:52 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 326 ms
+Mar 25, 2013 1:45:52 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 25, 2013 1:45:52 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.15
+Mar 25, 2013 1:45:52 AM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Mar 25, 2013 1:45:52 AM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 1:45:52 AM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Mar 25, 2013 1:45:52 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 691 ms
+Mar 25, 2013 1:50:12 AM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 1:50:13 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 12:53:36 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 12:53:37 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 12:55:37 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 12:55:37 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 12:57:47 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 12:57:47 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 12:59:38 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 12:59:38 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 1:10:18 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 1:10:19 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 1:17:19 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 1:17:19 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 1:20:30 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 1:20:30 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 1:22:50 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 1:22:50 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 2:11:32 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 2:11:32 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 2:13:52 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 2:13:52 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 2:15:13 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 2:15:13 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 2:16:13 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 2:16:13 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 2:20:33 PM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 2:20:34 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 25, 2013 2:20:34 PM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 2:20:34 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime
+Mar 25, 2013 2:20:39 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /research/CS-local/jdk1.5.0_01/jre/lib/i386/server:/research/CS-local/jdk1.5.0_01/jre/lib/i386:/research/CS-local/jdk1.5.0_01/jre/../lib/i386
+Mar 25, 2013 2:20:39 PM org.apache.coyote.http11.Http11BaseProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 2:20:39 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 326 ms
+Mar 25, 2013 2:20:39 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 25, 2013 2:20:39 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.15
+Mar 25, 2013 2:20:39 PM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Mar 25, 2013 2:20:40 PM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 2:20:40 PM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Mar 25, 2013 2:20:40 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 759 ms
+Mar 25, 2013 2:23:00 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 2:23:00 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 2:24:40 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 2:24:40 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 2:34:31 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 2:34:31 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 2:35:51 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 2:35:51 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 2:37:21 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 2:37:21 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 2:38:01 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 2:38:01 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 3:06:43 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 3:06:43 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 3:07:33 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 3:07:33 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 3:09:53 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 3:09:53 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 3:11:54 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 3:11:54 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 3:18:14 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 3:18:14 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 4:52:57 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 4:52:57 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 6:38:41 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 8:39:53 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 8:43:44 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 8:43:44 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 8:48:54 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 8:48:54 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 8:52:15 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 8:52:15 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 9:06:01 PM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 9:06:02 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 25, 2013 9:06:03 PM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 9:06:03 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime
+Mar 25, 2013 9:06:10 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /research/CS-local/jdk1.5.0_01/jre/lib/i386/server:/research/CS-local/jdk1.5.0_01/jre/lib/i386:/research/CS-local/jdk1.5.0_01/jre/../lib/i386
+Mar 25, 2013 9:06:10 PM org.apache.coyote.http11.Http11BaseProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 9:06:10 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 346 ms
+Mar 25, 2013 9:06:10 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 25, 2013 9:06:10 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.15
+Mar 25, 2013 9:06:10 PM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Mar 25, 2013 9:06:10 PM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 9:06:10 PM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Mar 25, 2013 9:06:10 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 672 ms
+Mar 25, 2013 9:37:32 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 9:39:32 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 9:44:52 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 9:44:52 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 9:45:52 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 9:45:52 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 9:45:55 PM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 9:45:55 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /research/CS-local/jdk1.5.0_01/jre/lib/i386/server:/research/CS-local/jdk1.5.0_01/jre/lib/i386:/research/CS-local/jdk1.5.0_01/jre/../lib/i386
+Mar 25, 2013 9:45:56 PM org.apache.coyote.http11.Http11BaseProtocol init
+SEVERE: Error initializing endpoint
+java.net.BindException: Address already in use:9548
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.initEndpoint(PoolTcpEndpoint.java:297)
+	at org.apache.coyote.http11.Http11BaseProtocol.init(Http11BaseProtocol.java:141)
+	at org.apache.catalina.connector.Connector.initialize(Connector.java:1016)
+	at org.apache.catalina.core.StandardService.initialize(StandardService.java:580)
+	at org.apache.catalina.core.StandardServer.initialize(StandardServer.java:782)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:503)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:523)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:247)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:412)
+Mar 25, 2013 9:45:56 PM org.apache.catalina.startup.Catalina load
+SEVERE: Catalina.start
+LifecycleException:  Protocol handler initialization failed: java.net.BindException: Address already in use:9548
+	at org.apache.catalina.connector.Connector.initialize(Connector.java:1018)
+	at org.apache.catalina.core.StandardService.initialize(StandardService.java:580)
+	at org.apache.catalina.core.StandardServer.initialize(StandardServer.java:782)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:503)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:523)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:247)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:412)
+Mar 25, 2013 9:45:56 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 332 ms
+Mar 25, 2013 9:45:56 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 25, 2013 9:45:56 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.15
+Mar 25, 2013 9:45:56 PM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Mar 25, 2013 9:45:56 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 25, 2013 9:45:56 PM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 9:45:56 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime
+Mar 25, 2013 9:45:56 PM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 9:45:56 PM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Mar 25, 2013 9:45:56 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 728 ms
+Mar 25, 2013 9:49:56 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 9:49:56 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 9:51:27 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 9:51:27 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 9:53:27 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 9:53:27 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 9:58:57 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 9:58:57 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 10:02:38 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 10:02:38 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 10:03:46 PM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 10:03:46 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /research/CS-local/jdk1.5.0_01/jre/lib/i386/server:/research/CS-local/jdk1.5.0_01/jre/lib/i386:/research/CS-local/jdk1.5.0_01/jre/../lib/i386
+Mar 25, 2013 10:03:46 PM org.apache.coyote.http11.Http11BaseProtocol init
+SEVERE: Error initializing endpoint
+java.net.BindException: Address already in use:9548
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.initEndpoint(PoolTcpEndpoint.java:297)
+	at org.apache.coyote.http11.Http11BaseProtocol.init(Http11BaseProtocol.java:141)
+	at org.apache.catalina.connector.Connector.initialize(Connector.java:1016)
+	at org.apache.catalina.core.StandardService.initialize(StandardService.java:580)
+	at org.apache.catalina.core.StandardServer.initialize(StandardServer.java:782)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:503)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:523)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:247)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:412)
+Mar 25, 2013 10:03:46 PM org.apache.catalina.startup.Catalina load
+SEVERE: Catalina.start
+LifecycleException:  Protocol handler initialization failed: java.net.BindException: Address already in use:9548
+	at org.apache.catalina.connector.Connector.initialize(Connector.java:1018)
+	at org.apache.catalina.core.StandardService.initialize(StandardService.java:580)
+	at org.apache.catalina.core.StandardServer.initialize(StandardServer.java:782)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:503)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:523)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:247)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:412)
+Mar 25, 2013 10:03:46 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 342 ms
+Mar 25, 2013 10:03:46 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 25, 2013 10:03:46 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.15
+Mar 25, 2013 10:03:46 PM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Mar 25, 2013 10:03:47 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 25, 2013 10:03:47 PM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 10:03:47 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime
+Mar 25, 2013 10:03:47 PM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 10:03:47 PM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Mar 25, 2013 10:03:47 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 758 ms
+Mar 25, 2013 10:14:07 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 10:14:37 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 10:17:08 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 10:17:08 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 10:20:48 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 10:20:48 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 10:23:59 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 10:23:59 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 10:26:49 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 10:26:49 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 10:35:50 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 10:41:30 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 10:43:50 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 10:43:50 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 10:45:20 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 10:45:20 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 10:48:11 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 10:48:11 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 10:50:20 PM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 10:50:21 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /research/CS-local/jdk1.5.0_01/jre/lib/i386/server:/research/CS-local/jdk1.5.0_01/jre/lib/i386:/research/CS-local/jdk1.5.0_01/jre/../lib/i386
+Mar 25, 2013 10:50:21 PM org.apache.coyote.http11.Http11BaseProtocol init
+SEVERE: Error initializing endpoint
+java.net.BindException: Address already in use:9548
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.initEndpoint(PoolTcpEndpoint.java:297)
+	at org.apache.coyote.http11.Http11BaseProtocol.init(Http11BaseProtocol.java:141)
+	at org.apache.catalina.connector.Connector.initialize(Connector.java:1016)
+	at org.apache.catalina.core.StandardService.initialize(StandardService.java:580)
+	at org.apache.catalina.core.StandardServer.initialize(StandardServer.java:782)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:503)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:523)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:247)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:412)
+Mar 25, 2013 10:50:21 PM org.apache.catalina.startup.Catalina load
+SEVERE: Catalina.start
+LifecycleException:  Protocol handler initialization failed: java.net.BindException: Address already in use:9548
+	at org.apache.catalina.connector.Connector.initialize(Connector.java:1018)
+	at org.apache.catalina.core.StandardService.initialize(StandardService.java:580)
+	at org.apache.catalina.core.StandardServer.initialize(StandardServer.java:782)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:503)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:523)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:247)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:412)
+Mar 25, 2013 10:50:21 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 338 ms
+Mar 25, 2013 10:50:21 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 25, 2013 10:50:21 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.15
+Mar 25, 2013 10:50:21 PM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Mar 25, 2013 10:50:21 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 25, 2013 10:50:21 PM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 10:50:21 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime
+Mar 25, 2013 10:50:21 PM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 10:50:22 PM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Mar 25, 2013 10:50:22 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 690 ms
+Mar 25, 2013 10:53:42 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 10:53:42 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 25, 2013 10:53:43 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 25, 2013 10:53:44 PM org.apache.catalina.core.StandardWrapper unload
+INFO: Waiting for 1 instance(s) to be deallocated
+Mar 25, 2013 10:53:44 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 10:55:34 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 10:55:34 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 10:57:14 PM org.apache.catalina.startup.HostConfig checkResources
+INFO: Undeploying context [/photoshare]
+Mar 25, 2013 10:57:14 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive photoshare.war
+Mar 25, 2013 10:57:33 PM org.apache.coyote.http11.Http11BaseProtocol pause
+INFO: Pausing Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 10:57:34 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /research/CS-local/jdk1.5.0_01/jre/lib/i386/server:/research/CS-local/jdk1.5.0_01/jre/lib/i386:/research/CS-local/jdk1.5.0_01/jre/../lib/i386
+Mar 25, 2013 10:57:34 PM org.apache.coyote.http11.Http11BaseProtocol init
+SEVERE: Error initializing endpoint
+java.net.BindException: Address already in use:9548
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.initEndpoint(PoolTcpEndpoint.java:297)
+	at org.apache.coyote.http11.Http11BaseProtocol.init(Http11BaseProtocol.java:141)
+	at org.apache.catalina.connector.Connector.initialize(Connector.java:1016)
+	at org.apache.catalina.core.StandardService.initialize(StandardService.java:580)
+	at org.apache.catalina.core.StandardServer.initialize(StandardServer.java:782)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:503)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:523)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:247)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:412)
+Mar 25, 2013 10:57:34 PM org.apache.catalina.startup.Catalina load
+SEVERE: Catalina.start
+LifecycleException:  Protocol handler initialization failed: java.net.BindException: Address already in use:9548
+	at org.apache.catalina.connector.Connector.initialize(Connector.java:1018)
+	at org.apache.catalina.core.StandardService.initialize(StandardService.java:580)
+	at org.apache.catalina.core.StandardServer.initialize(StandardServer.java:782)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:503)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:523)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:585)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:247)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:412)
+Mar 25, 2013 10:57:34 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 334 ms
+Mar 25, 2013 10:57:34 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Mar 25, 2013 10:57:34 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.5.15
+Mar 25, 2013 10:57:34 PM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Mar 25, 2013 10:57:34 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Mar 25, 2013 10:57:34 PM org.apache.coyote.http11.Http11BaseProtocol destroy
+INFO: Stopping Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 10:57:34 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: Failed shutdown of Apache Portable Runtime
+Mar 25, 2013 10:57:34 PM org.apache.coyote.http11.Http11BaseProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-9548
+Mar 25, 2013 10:57:34 PM org.apache.catalina.storeconfig.StoreLoader load
+INFO: Find registry server-registry.xml at classpath resource
+Mar 25, 2013 10:57:34 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 715 ms
